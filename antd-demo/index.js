@@ -7,10 +7,11 @@ import moment from 'moment';
 import 'moment/locale/zh-cn';
 moment.locale('zh-cn');
 
+// to get the timestamp
 var endDate = Math.round(new Date(2017,7,1,0,0,0));
 
 function disabledDate(current) {
-  // can not select days before today and today
+  // can not select days before today or after 2017.8.1
   if (!current){
   	return false;
   }
